@@ -4,10 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
 const api = 'https://anapioficeandfire.com/api/books'
 
 function fetchBooks() {
-  fetch(api)
+  return fetch(api)
   .then(res => res.json())
   .then(data => renderBooks(data))
-  return fetch(api)
 }
 
 function renderBooks(books) {
